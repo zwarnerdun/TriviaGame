@@ -10,17 +10,99 @@
     <title>Fashion Trivia</title>
 </head>
 <body>
-    <button class="Start Game">Click Me to Play!</button>
-    <div class="container">
+    <div id="container">
         <h1 class="header">Fashion Trivia</h1>
-        <div class="time counter" id="timeremainig"></div>
-        <div class="form" id="questions"></div>
+        
+        <button class="Start Game">Click Me to Play!</button>
+        <br/>
+        <div id="questionnaire">
+            <div class="time counter" id="timeremaining">Time Remaining: <span class="counting-down" id="timer"></span> seconds</div>
+        </br>
+            <div id="question-1">
+                <h3></h3>
+                <br/>
+                <input type="radio" id="q-one" value="wrong" name="q1">
+                <input type="radio" id="q-one" value="wrong" name="q1">
+                <input type="radio" id="q-one" value="correct" name="q1">
+                <input type="radio" id="q-one" value="wrong" name="q1">
+            </div>
+            </br>
+            <div id="question-2">
+                <h3></h3>
+                <br/>
+                <input type="radio" class="q-two" value="wrong" name="q2">
+                <input type="radio" class="q-two" value="correct" name="q2">
+                <input type="radio" class="q-two" value="wrong" name="q2">
+                <input type="radio" class="q-two" value="wrong" name="q2">
+            </div>
+            <br/><br/>
+            <div id="question-3">
+                <h3></h3>
+                <br/>
+                <input type="radio" class="q-three" value="wrong" name="q3">
+                <input type="radio" class="q-three" value="wrong" name="q3">
+                <input type="radio" class="q-three" value="wrong" name="q3">
+                <input type="radio" class="q-three" value="correct" name="q3">
+            </div>
+            <br/><br/>
+            <div id="question-4">
+                <h3></h3>
+                <br/>
+                <input type="radio" class="q-four" value="correct" name="q4">
+                <input type="radio" class="q-four" value="wrong" name="q4">
+                <input type="radio" class="q-four" value="wrong" name="q4">
+                <input type="radio" class="q-four" value="wrong" name="q4">
+            </div>
+            <br/><br/>
+            <div id="question-5">
+                <h3></h3>
+                <br/>
+                <input type="radio" class="q-five" value="wrong" name="q5">
+                <input type="radio" class="q-five" value="wrong" name="q5">
+                <input type="radio" class="q-five" value="wrong" name="q5">
+                <input type="radio" class="q-five" value="correct" name="q5">
+            </div>
+            <br/><br/>
+            <div id="question-6">
+                <h3></h3>
+                <br/>
+                <input type="radio" class="q-six" value="wrong" name="q6">
+                <input type="radio" class="q-six" value="wrong" name="q6">
+                <input type="radio" class="q-six" value="correct" name="q6">
+                <input type="radio" class="q-six" value="wrong" name="q6">
+            </div>
+            <br/><br/>
+            <div id="question-7">
+                <h3></h3>
+                <br/>
+                <input type="radio" class="q-seven" value="correct" name="q7">
+                <input type="radio" class="q-seven" value="wrong" name="q7">
+                <input type="radio" class="q-seven" value="wrong" name="q7">
+                <input type="radio" class="q-seven" value="wrong" name="q7">
+            </div>
+            <br/><br/>
+            <div id="question-8">
+                <h3></h3>
+                <br/>
+                <input type="radio" class="q-eight" value="wrong" name="q8">
+                <input type="radio" class="q-eight" value="wrong" name="q8">
+                <input type="radio" class="q-eight" value="correct" name="q8">
+                <input type="radio" class="q-eight" value="wrong" name="q8">
+            </div>
+        <button id="Finished">Done</button>
+        <div class="Popup" id="message"></div>
+        
+        <div id="results-page">
+            <h2>All Done!</h2>
+                <br/>
+                <p>Correct Answers: <span id="correct score"></span></p>
+                <p>Incorrect Answers: <span id="incorrect score"></span></p>
+                <p>Unanswered: <span id="unanswered score"></span></p>
+                </div>
+        </div>
     </div>
-
 	<button id="Finished">Done</button>
     <div class="Popup" id="message"></div>
-   
-    <div class="results"></div>
  
 </body>
 </html>
