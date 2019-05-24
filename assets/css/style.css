@@ -1,0 +1,15 @@
+.page-title,.innercover{
+    text-align: center;
+    margin-top: -800px;
+    font-size: 100px;
+    color: rgb(255, 0, 128);
+}
+
+#game-start{
+    background-color:rgb(255, 0, 128);
+    border: rgb(255, 0, 128);
+    margin-top: 50px;
+}
+body{
+    background-image: url("assets/images/color.jpg");
+}
