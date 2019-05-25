@@ -13,3 +13,6 @@
 body{
     background-image: url("assets/images/color.jpg");
 }
+#counter,#timer{
+    color: rgb(255, 0, 128);
+}
