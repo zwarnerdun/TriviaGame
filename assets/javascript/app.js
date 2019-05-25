@@ -7,7 +7,7 @@ $(document).ready(function() {
     $('#DoneBtn').hide();
     
     // Declare Variables
-    var number = 120; //number of seconds
+    var number = 60; //number of seconds
     var intervalId;
     var correct = 0;
     var incorrect = 0;
@@ -18,29 +18,28 @@ $(document).ready(function() {
         $('#questionnaire').show();
         // $('#results').show();
         $('#DoneBtn').show();
+        $('#timer').show();
+        $('#counter').show();
     }
     
     // timing for countdown
     function countdownTimer(){
-        intervalId = setInterval(decrement, 120000);
+        intervalId = setInterval(decrement, 1000);
     }
-    // $('#timer').show();
-    // $('#counter').show();
+
    
     // decrement timer
     function decrement(){
         number--;
-        $('#timer').html(" " + number + " " + "seconds");
+        $('#timer').html(" " + number);
         if (number ===1){
-            $('#timer').html(" " + number + " " + "seconds");
+            $('#timer').html(" " + number);
         }
         else if(number ===0) {
             stop();
             hide();
             results();
         }
-        number();
-
     }
     
     //to clear timer
@@ -62,9 +61,6 @@ $(document).ready(function() {
         $('#correct score').text("Correct Answers:" + " " + correct); 
         $('#incorrect score').text("Incorrect Answers:" + " " + incorrect); 
         $('#unanswered score').text("Unanswered:" + " " + unanswered); 
-        document.getElementById("#correct score").innerHTML = " " + correct;
-        document.getElementById("#incorrect score").innerHTML = " " + incorrect;
-        document.getElementById("#unanswered score").innerHTML = " " + unanswered;
     }
     
     //Clicking Start Button
