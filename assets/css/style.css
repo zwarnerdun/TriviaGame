@@ -1,6 +1,6 @@
 .page-title,.innercover{
     text-align: center;
-    margin-top: -800px;
+    margin-top: -650px;
     font-size: 100px;
     color: rgb(255, 0, 128);
 }
@@ -10,14 +10,26 @@
     border: rgb(255, 0, 128);
     margin-top: 50px;
 }
-body{
-    background-image: url("assets/images/color.jpg");
-}
+
 #counter,#timer{
     color: black;
-    margin-top: 50px;
+    text-align: center;
 }
 
-#questionnaire{
-    margin-top: 50px;
+.container2{
+    background: url("../images/makeup.jpg");
+    margin-top: -32px;
+    background-color: white;
+}
+
+#results{
+    background-color: white;
+    margin-top: -100px;
+}
+
+#image{
+    margin-bottom: -33px;
+    margin-top: -19px;
+    margin-left: -16px;
+    margin-right: -16px;
 }

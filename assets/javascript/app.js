@@ -61,6 +61,7 @@ $(document).ready(function() {
         $('#correct score').text("Correct Answers:" + " " + correct); 
         $('#incorrect score').text("Incorrect Answers:" + " " + incorrect); 
         $('#unanswered score').text("Unanswered:" + " " + unanswered); 
+        $('#DoneBtn').hide();
     }
     
     //Clicking Start Button
