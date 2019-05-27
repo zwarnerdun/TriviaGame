@@ -56,14 +56,17 @@ $(document).ready(function() {
     
     // display results of game
     function results(){
+        document.getElementById("correct score").innerHTML = correct;
+        document.getElementById("incorrect score").innerHTML = incorrect;
+        document.getElementById("unanswered score").innerHTML = unanswered;
         $('#results').show();
         unanswered = (8-(correct+incorrect));
-        $('#correct score').text("Correct Answers:" + " " + correct); 
-        $('#incorrect score').text("Incorrect Answers:" + " " + incorrect); 
-        $('#unanswered score').text("Unanswered:" + " " + unanswered); 
+        $('#correct score').html("Correct Answers:" + " " + correct); 
+        $('#incorrect score').html("Incorrect Answers:" + " " + incorrect); 
+        $('#unanswered score').html("Unanswered:" + " " + unanswered);
         $('#DoneBtn').hide();
     }
-    
+   
     //Clicking Start Button
     $('#game-start').on('click', function(){
         $('#game-start').hide();
@@ -84,9 +87,9 @@ $(document).ready(function() {
     
     //Clicking Radio button
     $('input[type=radio]').on ('change', function(){
-    correct = $('input[value=correct]:checked').length;
-    incorrect = $('input[value=wrong]:checked').length;
-    unanswered = (8-(correct+incorrect));
+        correct = $('input[value=correct]:checked').length;
+        incorrect = $('input[value=wrong]:checked').length;
+        unanswered = (8-(correct+incorrect));
     });
     
 
