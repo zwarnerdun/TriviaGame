@@ -11,6 +11,8 @@ Instructions - Multiple choice fashion trivia
 # Deployment
 Try the it out here: https://zwarnerdun.github.io/TriviaGame/
 
+![fashion](https://user-images.githubusercontent.com/49568886/64914774-14d8ea80-d726-11e9-8658-564bed1199a4.PNG) ![timer](https://user-images.githubusercontent.com/49568886/64914775-19050800-d726-11e9-8c7c-a078c265bdb5.PNG)
+
 # Overview
 Problem: The timer would not function and countdown correctly, it just stayed at 60 seconds.
 
